@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;600&display=swap');
+
+body::before{
+    display: block;
+    content: "";
+    height: 100px;
+}
+
+/* navigation bar */
+
+.navbar img{
+    width: 5rem;
+}
+
+.navbar .btn-outline-danger{
+    color: rgb(256,44,116);
+    border-color: rgb(256,44,116);
+}
+.navbar .btn-outline-danger:hover{
+    color: #fff;
+}
+
+.navbar{
+    padding: 2% 5%;
+}
+
+/* intro section */
+
+#intro .container{
+    padding-top: 10%;
+}
+
+#intro .img{
+    width: 50%;
+    padding: 2px;
+    height: 50%;
+    border-radius: 20px !important;
+}
+
+.img-1{
+    height: 70% !important;
+    margin-top: 10%;
+}
+
+.img-2{
+    width: 30% !important;
+}
+
+.img-3{
+    width: 45% !important;
+    height: 70% !important;
+}
+
+.intro-heading{
+    padding-top: 25px;
+    padding-left: 50px;
+}
+
+#intro h1{
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+#intro p{
+    font-family: 'Rubik', sans-serif;
+}
+
+#intro button{
+    color: #fff;
+    font-size: 20px;
+    background-color: rgb(256,44,116);
+    border: none;
+    font-weight: bold;
+}
+
+#intro button:hover{
+    background-color: #AE2C74;
+}
+
+/* specs */
+#specs{
+    font-family: 'Rubik', sans-serif;
+}
+
+h4{
+    font-weight: bold;
+}
+
+#specs .container{
+    margin-top: 10%;
+}
+
+/* magic frame */
+
+
+.magic-frame-demo video{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#magic-frame .container{
+    margin-top: 5%;
+    background-color: #f5dce8;
+    font-family: 'Rubik', sans-serif;
+    color: #969696;
+}
+
+#magic-frame h2{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#magic-frame p{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+/* Gallery section */
+
+#gallery .container{
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+}
+
+.card-img-top{
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card{
+    border: none;
+}
+
+/* Ad video section */
+
+.ad{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    font-family: 'Rubik', sans-serif;
+    background-image: url(../Images/57270914.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+
+.ad h4{
+    font-size: 2rem;
+}
+
+#ad-video button{
+    color: #fff;
+    font-size: 15px;
+    background-color: rgb(256,44,116);
+    border: none;
+    font-weight: bold;
+}
+
+.btn:focus,.btn:active{
+    outline: none !important;
+    box-shadow: none;
+}
+
+.modal-util{
+    margin: 0%;
+    position: absolute;
+    height: 30%;
+    width: 36%;
+    left: 32%;
+    top: 35%;
+}
+
+/* footer section */
+
+.ftr p{
+    font-size: 10px;
+    color: grey;
+}
+
+@media(max-width:992px){
+    .img-1{
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .intro-heading{
+        padding-top: 10%;
+    }
+}
+
+@media(max-width:576px){
+    .img-1{
+        margin-bottom: 10px !important;
+    }
+
+    .intro-img{
+        order: 2;
+    }
+
+    .intro-heading{
+        order: 1;
+        padding: 0 5%;
+    }
+
+    h1{
+        margin-top: 10px;
+        font-size: 40px !important;
+    }
+
+    .intro-img .img-1{
+        margin-top: 0;
+    }
+
+    #magic-frame h2{
+        padding-top: 5px;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    #magic-frame p{
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    #magic-frame-demo{
+        padding:0% !important;
+        width: 100%;
+    }
+}

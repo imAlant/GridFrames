@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>GridFrames |</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="container justify-content-center my-3">
+            <a class="navbar-brand" href="#"><img src="../Images/GRID-FRAMES-Png1.png" alt=""></a>
+        </div>
+    </nav>
+
+    <section id="image-section" class="image-section">
+        <div class="container-fluid">
+            <div class="d-flex flex-wrap bd-highlight">
+                <div class="p-2 flex-grow-1 bd-highlight image-container">
+                    <div class="d-flex flex-row flex-wrap justify-content-center">
+                        <div class="flex-fill me-2 inner-image-container">
+                            <img src="../Images/intro (1).jpg" alt="no image">
+                            <div class="settings" id='sampleid'>
+                                <i class="fas fa-crop crop" data-bs-toggle="modal" data-bs-target="#imageModal"></i>                  
+                                <i class="fas fa-trash delete"></i>        
+                            </div>                            
+                        </div>
+
+
+                        <!-- form control -->
+                        <div class="flex-fill me-2 mb-2 inner-image-container input-control">
+                            <form action="POST">
+                                <input type="file" id="img-upload" class="imageUploader" multiple="">
+                                <label for="img-upload">+</label>
+                            </form>
+                        </div>
+                        
+                        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Adjust the image as the way you want.</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="modal-contents">
+                                        <img src="" alt="no image">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-outline-danger">Save changes</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="imageLoad.js"></script>
+</body>
+
+</html>

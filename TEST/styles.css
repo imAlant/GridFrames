@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap');
+
+
+body{
+    height: 100vh;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+.navbar img{
+    width: 5rem;
+}
+
+.navbar{
+    height: 15vh;
+}
+
+
+.imageUploader {
+    opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+    position: absolute;
+}
+
+label{
+    display: inline;
+    position: relative;
+    height: 280px;
+    background: #fff;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f00563;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform .2s ease-out;
+} 
+
+
+.frame-container{
+    height: 85vh; 
+}
+
+.inner-image-container{
+    position: relative;
+    width: 24%;
+    max-width: 24%;
+    height: 280px;
+}
+
+.inner-image-container img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.settings{
+    padding: 5px;
+    background-color: rgba(232, 230, 230,0.5);
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.settings i{
+    padding: 5px;
+}
+
+.inner-image-container:hover .settings{
+    visibility: visible;
+}
+
+.inner-image-container .settings{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.modal-body{
+    position: relative;
+    height: 400px;
+}
+
+.modal-contents{
+    position: absolute;
+    width: 60%;
+    height: 70%;
+    left: 50%;
+    margin-left: -30%;
+    overflow: hidden;
+    cursor: move;
+}
+
+.modal-contents img{
+    position: absolute;
+    width: 180%;
+    height: 180%;
+}
+
+@media(max-width:768px){
+    .inner-image-container{
+        width: 48%;
+        max-width: 50%;
+    }
+}
+
+@media(max-width:576px){
+    .inner-image-container{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+@media(max-width:1050px){
+    .frame-container{
+        display: none; 
+    }
+}
+
+/* .inner-image-container{
+    position: relative;
+}
+
+.inner-image-container button{
+    visibility: hidden;
+    position: absolute;
+    top: 40%;
+    left: 38%;
+}
+
+.inner-image-container:hover button{
+    visibility: visible;
+}
+
+.inner-image-container{
+    height: 280px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    padding: 0%;
+    border: 1px solid black;
+}
+
+.inner-image-container img{
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+} */
+
+/* .image-frame{
+    height: 85vh;
+}
+
+.frame-container{
+    border-left: 1px solid #EEEEEE;
+    height: 85vh;
+}
+
+.image-container{
+    height: 85vh;
+} */
+
+
+
+

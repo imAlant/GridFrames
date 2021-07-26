@@ -1,0 +1,19 @@
+.sample{
+    position: relative;
+    background-color: blanchedalmond;
+    width: 50%;
+    height: 400px;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+
+
+.sample-2{
+    height: 100px;
+    width: 100px;
+    max-width: 100%;
+    position: absolute;
+    background-color: aqua;
+    top: 40%;
+    left: 40%;
+}
