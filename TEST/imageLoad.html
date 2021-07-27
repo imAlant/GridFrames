@@ -32,9 +32,9 @@
                         <div class="flex-fill me-2 inner-image-container">
                             <img src="../Images/intro (1).jpg" alt="no image">
                             <div class="settings" id='sampleid'>
-                                <i class="fas fa-crop crop" data-bs-toggle="modal" data-bs-target="#imageModal"></i>                  
-                                <i class="fas fa-trash delete"></i>        
-                            </div>                            
+                                <i class="fas fa-crop crop" data-bs-toggle="modal" data-bs-target="#imageModal"></i>
+                                <i class="fas fa-trash delete"></i>
+                            </div>
                         </div>
 
 
@@ -45,38 +45,42 @@
                                 <label for="img-upload">+</label>
                             </form>
                         </div>
-                        
-                        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+
+                        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel"
+                            aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Adjust the image as the way you want.</h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="modal-contents">
-                                        <img src="" alt="no image">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Adjust the image as the way you
+                                            want.</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
                                     </div>
-                                    
-                                    <div class="size-controller">
-                                        <button id='sample'>sample</button>
-                                        <p>Adjust size</p>
-                                        <input type="range" min="1" max="100" value="50" class="slider" id="size-slider">
-                                        <p>Adjust orientation</p>
-                                        <input type="range" min="1" max="100" value="50" class="slider" id="rotate-slider">   
+                                    <div class="modal-body">
+                                        <div class="modal-contents">
+                                            <img src="" alt="no image">
+                                        </div>
+
+                                        <div class="size-controller">
+                                            <p>Adjust size</p>
+                                            <!-- <input type="range" min="1" max="100" value="50" class="slider" id="size-slider"> -->
+                                            <input type="range" min="0" max="100" value="0" class="form-range" id="size-slider">
+                                            <p>Adjust orientation</p>
+                                            <input type="range" min="0" max="100" value="0" class="form-range" id="rotate-slider">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-dark"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-outline-danger">Save changes</button>
                                     </div>
                                 </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
-                                  <button type="button" class="btn btn-outline-danger">Save changes</button>
-                                </div>
-                              </div>
                             </div>
-                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </section>
 
