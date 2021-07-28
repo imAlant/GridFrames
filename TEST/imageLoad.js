@@ -67,9 +67,6 @@ $(function () {
 
     $('#size-slider').on('input', function () {
         size = $('#size-slider').val();
-        // console.log(modalImgId);
-        // $('#size-slider').parent().siblings('.modal-contents').children('#' + modalImgId).height((parseInt(height) + parseInt(size * 2)) + 'px');
-        // $('#size-slider').parent().siblings('.modal-contents').children('#' + modalImgId).width((parseInt(width) + parseInt(size * 2)) + 'px');
         $('.'+modalImgId).height((height+(size*2))+'px');
         $('.'+modalImgId).width((width+(size*2))+'px');
     });
