@@ -13,6 +13,7 @@
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="FrameStyles.css">
     <title>GridFrames |</title>
 </head>
 
@@ -29,7 +30,7 @@
             <div class="d-flex flex-wrap bd-highlight">
                 <div class="p-2 flex-grow-1 bd-highlight image-container">
                     <div class="d-flex flex-row flex-wrap justify-content-center">
-                        <div class="flex-fill me-2 inner-image-container">
+                        <div class="flex-fill me-2 inner-image-container container-frame">
                             <img src="../Images/intro (1).jpg" alt="no image">
                             <div class="settings" id='sampleid'>
                                 <i class="fas fa-crop crop" data-bs-toggle="modal" data-bs-target="#imageModal"></i>
@@ -58,7 +59,7 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="modal-contents">
-                                            <img src="" alt="no image">
+                                                <img src="" alt="no image">
                                         </div>
 
                                         <div class="size-controller">
@@ -70,9 +71,9 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button id="modal-close" type="button" class="btn btn-outline-dark"
-                                            data-bs-dismiss="modal">Close</button>
-                                        <button id='save-changes' type="button" class="btn btn-outline-danger">Save changes</button>
+                                        <button id="save-changes" type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Save & Close</button>
+                                        <!-- <button id='save-changes' type="button" class="btn btn-outline-danger">Save changes</button> -->
                                     </div>
                                 </div>
                             </div>

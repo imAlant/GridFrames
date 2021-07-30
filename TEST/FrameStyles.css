@@ -1,0 +1,8 @@
+.container-frame{
+    border: 12px solid black;
+}
+
+
+.container-frame img{
+    border: 20px solid white;
+}
